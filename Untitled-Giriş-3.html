@@ -1,0 +1,72 @@
+<DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="stil.css">
+        <!--Harici CSS kodu bağlamadır; CSS kodları harici olarak başka bir dosya içinde bulunur
+        bu dosyayı link şeklinde html dosyamıza bağlarız.Bu bağlama şekli öncelik bakımından en sonda yer alır. -->  
+        <style type="text/css">
+            p{color: aqua; }
+        </style>
+        <!--Dahili CSS kodları bağlama yöntemi, ne değiştirmek istersek ayrı ayrı yada toplu olarak sınıflaştırıp 
+        değiştirir ya da düzenleriz. Bu bağlama öncelik bakımından yöntemi 2. sıradadır.-->
+    </head>
+    <body>
+        <p>Dahili CSS kodları bağlama yöntemi örneğidir.Öncelik bakımından ikinci sırada yer alır.</p>
+        <p style="color: rgb(180, 38, 183);">Satır içi CSS kodları bağlama örneğidir.Öncelik bakımından ilk sırada yer alır.</p>
+        <br>
+        <br>
+
+        <table border="1"><!-- Table tagı tablo yapımında kullanılır. Border özelliği duvarlarının kalınlığıdır.-->
+            <tr>
+                <!--Tr etiketi satırları belirtir.-->
+                <td colspan="3"><h3>Pazaryeri Myo</h3></td>
+                <!--Td etiketi satırdaki hücreleri yani sütunları belirtir. 
+                Colspan özelliği satırdaki hücreleri birleştirir.
+                Rowspan sütundaki hücreleri birleştirir.-->
+            </tr>
+            <tr>
+                <td><b>Sütun Başlığı 1</b></td>
+                <td><b>Sütun Başlığı 2</b></td>
+                <td><b>Sütun Başlığı 3</b></td>
+            </tr>
+            <tr>
+                <td><a href="#"> Boş link </a></td>
+                <td> Hücre 2</td>
+                <td rowspan="3">
+                    <ul>
+                        <li> 2 Hücre Birleşimi 1.Madde</li>
+                        <li> 2 Hücre Birleşimi 2.Madde</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Hücre 3</td>
+                <td>Hücre 4</td>
+              
+            </tr>
+            <tr>
+                <td>Hücre 5</td>
+                <td> Tablo İçi Tablo
+    <table border="1"> <!--Tablo içi tablo-->
+        <tr>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>d</td>
+        </tr>
+    </table>
+    
+                </td>
+              
+            </tr>
+        </table>
+
+    <p style="color: rgb(12, 152, 187);"> CSS sayfasındaki css kod formu;<br>
+        h1 {<br> 
+            color:red;<br> 
+            }
+    </p>
+    </body>
+
+</html>
