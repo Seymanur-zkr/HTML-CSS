@@ -1,0 +1,83 @@
+<DOCTYPE html>
+    <head>   <!--  YORUM SATIRI  -->
+    <!--Baş kısım ;Sunucu ve arama motorlarıyla ilgili bilgiler içerirler.--> </head>
+<body>
+    <!--Ziyaretçiye gösterilebicek içeriği barındırır.-->
+    <p> Paragraf etiketi, paragraf metin yazmamız içindir. </p>
+    <br><br>
+    <!--Aynı paragrafın alt satırına geçmemizi sağlar yani satır atlatır.Kapanış tagı yoktur.--> 
+    <br>
+    <!-- hx ler içeriklerin başlık bilgisini barındırır ve 6 adet bulunur.-->
+    <h1>En Büyük Boyuttaki Başlık 1</h1>
+    <h2>Başlık 2</h2>
+    <h3>Başlık 3</h3>
+    <h4>Başlık 4</h4>
+    <h5>Başlık 5</h5>
+    <h6>En Küçük Boyuttaki Başlık 6</h6>
+    <hr><!--Sayfada bir satır boyunca çizgi çeker-->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+     Doloribus iure ea ex dolore odit tempora esse ipsum magni magnam, 
+    delectus autem voluptates quod ab aut vitae est consectetur,
+     possimus cum.</p>
+     <!--lorem paragraf tagı içerisine otomatik metin örneği ekler.-->
+     <br><br>
+     <p> Listeleme; </p>
+     <ul><!-- Unordered List ; madde imli liste oluşturmak için kullanılır.-->
+        <li>
+            Öğe1
+            <!--Öğeleri yazmak için li tagı kullanılır. iç içe madde yazıcaksak li tagı içine tekrar bir liste oluşturmak durumundayız.-->
+            <ul>
+                <li>Öğe 1.1</li>
+                <li>Öğe 1.2</li>
+            </ul>
+        </li>
+        <li>
+            Öğe 2
+            <ul>
+                <li>Öğe 3.1</li>
+                <li>
+                    Öğe 3.
+                    <ul>
+                        <li>Öğe 3.1.1</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Öğe 3</li>
+        <li>Öğe 4</li>
+        <li>Öğe 5</li>
+    </ul>
+    <ol><!-- Ordered List ; numaralı liste oluşturmak için kullanılır. -->
+        <li>Öğe A</li>
+        <li>Öğe B</li>
+        <li>Öğe C</li>
+        <li>Öğe D</li>
+        <li>Öğe E</li>
+    </ol>
+
+    <br><br>
+    <!-- a href; link bağlantı tagıdır. Sayfa içi ve sayfa dışında gezinmemizi sağlar. Bir resme, butona veya metin içerisine linkler koyulabilmektedir.-->
+    <a href="https://code.visualstudio.com/docs/editor/codebasics"> Visual Studio Kısayollar</a>
+    <!-- Gidilmek istenen link a href tagında tırnak içerisinde yer alırke, ziyaretçinin linki görmesini değiştirip isimlendirdiğimiz kısım p tagındaki tarz ile yazılır.-->
+    <a href="#test" target="_blank">Bağlantı</a>
+    <!--Linkler her zaman aynı sekmede açılır ancak yeni bir sekmede açmak istersek target="blank" özelliğinden yararlanırız. -->
+    <ul>
+        <li>
+            Dış Bağlantılar
+            <ul>
+                <li><a href="https://google.com" target="_blank" >Google</a></li><!--Yeni bir sekmede açılır.-->
+                <li><a href="https://youtube.com" target="_self">Youtube</a></li><!--Tıklandığı sekmede açar. -->
+            </ul>
+        </li>
+    
+        <li>İç bağlantılar
+            <ol>
+            <li><a href="sayfa1.html">Sayfa 1</a></li><!-- Sayfa içi gezinmede sayfa isimlerini bağlantı olarak kullanabiliriz. -->
+        </ol>
+        </li>
+    </ul>    
+    <br><br>
+
+
+    
+</html>
