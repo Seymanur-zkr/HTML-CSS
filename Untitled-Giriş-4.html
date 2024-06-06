@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+<body>
+    <form>
+        <label for="ad">İsim:</label>
+        <input type="text" id="ad" name="ad" value="Adınızı giriniz."  required ><br>
+        <label for="Yasiniz">Yaşınız:</label> 
+        <input type="number"name="yas" id="yas" required ><br>
+        <!--sayı girişi için kullanılır. required yazmak zorunludur.-->
+        <label for="Email">Email:</label>
+        <input type="email" name="email" id="email" required ><br>
+        <!--Email girişi için metin giriş kutusu oluşturur.-->
+        <label for="Url">Url:</label>
+        <input type="url"name="url" id="url"><br>
+         <!--Url girişi için metin giriş kutusu oluşturur.-->
+
+<br>
+        <!--Radio butonu; iki yada daha fazla seçenekten sadece birisiniin 
+        seçilmesi için kullanılır. Aynı gruptaki onay kutularının name özelliği aynı olmalıdır.
+        Seçili gelmesini istersen eğer  <input type="radio" ... checked> ekleyerek yazarız.-->
+        <input type="radio" id="A" name="fav_language" value="A">
+        <label for="A">Tek bir seçeneği seçebilirsiniz.-A-</label><br>
+        <input type="radio" id="B" name="fav_language" value="B">
+        <label for="B">Tek bir seçeneği seçebilirsiniz.-B-</label><br>
+        <input type="radio" id="C" name="fav_language" value="C">
+        <label for="C">Tek bir seçeneği seçebilirsiniz.-C-</label>
+<br>
+<br>
+ <!-- Checkbox; evet - hayır tarzı cevaplarda kullanılır.
+    Sadece biri değil birçok buton işaretlnebilir durumdadır.
+ Her name özelliği farklı olmalıdır. -->
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Ev">
+  <label for="vehicle1"> Bir eve sahibim.</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Araba">
+  <label for="vehicle2"> Bir arabaya sahibim </label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="İş">
+  <label for="vehicle3"> Bir tam zamanlı işe sahibim.</label>
+<br>
+<!--Combobox: select name seçeneklerin türünü grubunu yazarsın, opinion içlerine seçenekleri yazarsın.
+Seçili gelmesini istersen eğer <opinion selected> .. <opinion> şeklinde yazarız.
+ multiple disabled ifadesi seçmemize engel olur, işlevsizleştirir.-->
+<label for="cars">Arabanızın markasını seçin:</label>
+<select id="cars" name="cars" multiple disabled>
+  <option value="Nissan GTR">Nissan GTR</option>
+  <option value="Porshe">Porshe</option>
+  <option value="BMW">BMW</option>
+  <option value="Mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select> <br>
+<!--Textarea: Text metin kutusu tek satırlık iken textarea çok satırlı veri girişi için kullanılır. -->
+<textarea name="message" rows="10" cols="30">
+    Çok satırca yazmanıza izin veren Text kutusudur.
+    </textarea> <br>
+    <!--Onclick özelliği;onclick="alert('sayfada gözüken yazı bildirimi')" sayfada bildirim oluşur.-->
+    <button type="button" onclick="alert('Geri bildirim sağladınız!')">Geri Bildirim Sağlayın.</button> 
+  <br>
+  <input type="button"><br><!--Normal buton-->
+  <input type="checkbox"><br><!--Net yanıtlarda kullanılır.-->
+  <input type="color"><br><!--Renk seçmek içindir.-->
+  <input type="date"><br><!--Gün-ay-yıl olmak üzere tarih girişi içindir.-->
+  <input type="datetime-local"><br><!--Gün-ay-yıl-zaman olmak üzere tarih girişi içindir.-->
+ 
+   <input type="file"><br><!--File dosya göndermek içindir.-->
+  <input type="hidden"><br><!--Bazen formdaki verilerle beraber sizin istediğimiz ama ziyaretçinin bilmesi
+görmesi gerekmediği bazı verilerde göndermek isteyebilirsiniz.Gizli Hidden bu işlev için kullanılmaktadır.-->
+  <input type="image"><br><!--normal onay butonu yerine resim kullanabilirsiniz bu koda artı olarak Src özelliği 
+ile dosyadaki resmi eklemeniz yeterlidir.-->
+  <input type="month"><br><!--Yıl ve ay girişi içindir.-->
+
+  <input type="password"><br><!--Yazarken şifremiz nokta şeklinde gözükerek şifre girişi yapılabilmesi içindir.-->
+  <input type="radio"><br><!--Radio butonu; iki yada daha fazla seçenekten sadece birisiniin seçilmesi için kullanılır.-->
+  <input type="range"><br><!-- uzun yüzdelik barını ayarlayabildiğimiz butondur.-->
+  <input type="search"><br><!--Arama yeridir, tarayıcı gibi...-->
+  <input type="tel"><br><!--Tel yazma kutusudur.-->
+  <input type="text"><br><!--Tek satırlık yazı kutusudur.-->
+  <input type="time"><br><!--Saat ve dakika girişi içindir.-->
+  <input type="url"><br><!--Url girişi içindir.-->
+  <input type="week"><br><!--Gün,hafta ve yıl girişi içindir.-->
+  <!--Submit onaylamayken Reset iptal butonudur. Value özelliği ile isimlendiririz.-->
+  <input type="submit" value="Kaydet">
+  <input type="reset" value="Temizle">
+        </form>
+<!--Video dosyalarının kullanımı;
+<video src="videoyu yazın" genişlik yükseklık ayarlıyın. 
+Autoplay özelliği; Sayfa açılırsa video otomatik çalıştırılır.
+(Autoplay her sitede desteklenmez.)
+Contrls özelliği; Kontrol düğmelerinin gözükmesi sağlanır.
+Loop özelliği; Videonun sürekli oynamasının sağlar.
+Preload özelliği; Play düğmesine basılmadan sayfa açıldığında videonun indirilmesi başlanır.
+Muted; Videonun sesi kısılmış halde başlamasını sağlar. 
+Videoya farklı tarayıcıda destek sunmak için;
+örnek;  
+<video width="320" height="240" controls>
+    <source src="video yeri.mp4 " type="video/mp4">
+    <source src="video yeri.ogg " type="video/ogg">
+    <source src="video yeri.webm " type="video/webm">
+  </video>
+-->
+
+<!--Ses Dosyalarının Kullanımı;
+Ses dosyasında video yerine <audio> tagı kullanılır.Preload özelliği; ses dosyasındada geçerlidir direk indirmeye başlanır.
+    örnek;
+    <audio controls>
+        <source src="videonun yeri"
+    </audio>
+tarzındadır.-->
+
+
+
+</body>
+</html>
